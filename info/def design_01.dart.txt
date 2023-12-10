@@ -1,0 +1,7 @@
+ design_01.dart
+
+ Criação do app 'MyApp baseado em 'Material'com sua classe extendendo 'StatelessWidget' um widget estático . Conhecendo suas propriedades title, theme definidas 
+
+Introdução ao uso da classe Scaffold onde retornamos um layout basico contendo um 'AppBar' com sua propriedade title e em seguida um body que será um 'Container' com sua cor de fundo definida para que possa ser notado
+
+No final é adicionado um botão 'floatingActionButton' e feitas suas configuração basica de evento
