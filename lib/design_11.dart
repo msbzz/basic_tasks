@@ -26,7 +26,8 @@ class MyApp extends StatelessWidget {
             Task('Aprender Flutter'),
             Task('Estudar React'),
             Task('Estudar C#'),
-            Task('Ir a Bali, Surfar muito,Beber muita cerveja,Farrear com os amigos'),
+            Task(
+	      'Ir a Bali, Surfar muito,Beber muita cerveja,Farrear com os amigos'),
           ],
         ),
 
@@ -60,7 +61,8 @@ class _TaskState extends State<Task> {
           children: [
             Container(
               color:Colors.blue,
-              height: 140,),
+              height: 140,
+	      ),
             Column(
               children: [
                 Container(
@@ -77,14 +79,14 @@ class _TaskState extends State<Task> {
                       Container(
                            width: 200,
                           child: Text(
-                            widget.nomeTarefa,style:
-                            TextStyle(
-                                fontSize: 24,
-                                overflow: TextOverflow.ellipsis
-                            ),
-                          )
-                      ),
-                      ElevatedButton(onPressed: (){
+                            widget.nomeTarefa,
+			    
+			    style:TextStyle(
+			    			    
+                                fontSize: 24, overflow: TextOverflow.ellipsis),
+			  )),
+                      ElevatedButton(
+		      onPressed: () {
                         setState(() {
                           _nivel++;
                         });
@@ -102,15 +104,16 @@ class _TaskState extends State<Task> {
                       padding: const EdgeInsets.all(8.0),
                       child: Container(
                           child: LinearProgressIndicator(
-                            color:Colors.white,
-                            value:_nivel/10
-                          ),
+                            color:Colors.white,value:_nivel/10),
                           width: 200,
                       ),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Text('Nivel $_nivel',style:TextStyle(color:Colors.white,fontSize:16),),
+		      child: Text(
+		        'Nivel $_nivel',
+			style:TextStyle(color:Colors.white,fontSize:16),
+		      ),
                     ),
                   ],
                 )

@@ -125,3 +125,35 @@ Na propriedade 'value' de 'LinearProgressIndicator' foi adicionada uma formula q
 
 ![image](info/images/tasks_design_10.1.png)
 
+- design_11.dart
+
+Espaçamento do widgets 'Row' contendo 'LinearProgressIndicator' e a widget 'Text' onde ambas são encapsuladas em 'Padding' sendo um para cada 
+
+![image](info/images/tasks_design_11.1.png)
+
+- design_12.dart
+
+ Aqui o código modificado no título do AppBar foi envolvido com um Padding widget e um estilo foi adicionado ao texto. O Padding tem um valor de EdgeInsets.only(left: 32), o que desloca o título para a direita. Além disso, o estilo do texto foi definido com TextStyle(color: Colors.white), o que define a cor do texto como branco.
+
+![image](info/images/tasks_design_12.1.png)
+
+- design_13.dart
+
+1 - AppBar Alterações:
+
+Remoção do Padding no Título: No código original, o título 'Tarefas' estava dentro de um widget Padding. No código  
+Adição de um Leading Container: Um Container vazio foi adicionado como o widget leading na AppBar. Isso é mencionado como um espaço ocupador, possivelmente para alinhamento visual.
+
+2 - Alterações no Widget Task:
+
+- Alteração no Layout do Botão:
+ - Padding Adicionado: Um Padding foi adicionado em torno do botão.
+ - Alteração no Tamanho do Botão: O botão agora tem uma largura de 80 e uma altura de 60.
+ - Estilo Personalizado: O botão agora usa ElevatedButton.styleFrom para personalizar a cor de fundo, a cor do texto e a forma do botão.
+
+ - Adição de um FittedBox com Coluna: Dentro do botão, um FittedBox contendo uma Column foi adicionado. Esta coluna contém um ícone e um texto ('Up'), com um SizedBox entre eles para espaçamento.
+ - Alteração no Padding da Barra de Progresso e Texto de Nível: O Padding para a barra de progresso e o texto de nível foi ajustado, especialmente com a adição de EdgeInsets.only(left: 8) para a barra de progresso e EdgeInsets.all(12.0) para o texto de nível.
+
+![image](info/images/tasks_design_13.1.png)
+
+ 
