@@ -95,9 +95,33 @@ Voltando ao titulo da tarefa no widget 'TextStyle' é configurada a propriedade 
 afim de truncar textos longos
 
 ![image](info/images/tasks_design_07.png)
- 
+
+- design_08.dart
+
+Nesse ponto será adicionadp o evento do contador do nivel por meio do evento 'onPressed' assim como sua apresentação no widget 'Text' estilizado abaixo do widget 'Row'
+
+Outra modificação foi encapasular tudo em um widget 'Column'
 
 
- 
+![image](info/images/tasks_design_08.1.png)
 
+![image](info/images/tasks_design_08.2.png)
+
+- design_09.dart
+
+Devido a necessidade da manutenção de estado pela widget 'Task' esta foi modificada de 'StatelessWidget' estática para 'StatefulWidget' dinâmica e com isso criar a widget '_TaskState' do tipo 'State' para gerenciar este estado
+
+No caso aqui falamos da alteração do contador '_nivel' que precisa ser descrito de forma explicita em dentro setState()
+
+Outra alteração foi do acesso a varivel interna a 'Task' que agora precisa ser referenciada da seguinte form 'widget.nomeTarefa'
+
+
+![image](info/images/tasks_design_09.1.png)
+
+- design_10.dart
+
+Inclusão do widget 'LinearProgressIndicator' ao lado de 'Text' usado para indicação do total nivel incrementado assim como o encapsulamento destes via widget 'Row'.
+Na propriedade 'value' de 'LinearProgressIndicator' foi adicionada uma formula que converte o valor total incrementado em fracionário devido na soma total o nível máximo ser 1 já que a escala do 'LinearProgressIndicator' varia de 0 a 1
+
+![image](info/images/tasks_design_10.1.png)
 
