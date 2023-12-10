@@ -7,13 +7,23 @@ uma lista de tarefas onde é possível se ter uma idéia da evolução através 
 barra de progresso e assim como a dificuldade através da representação de cinco 
 estrelas onde uma representa a mais simples e as cinco representam as mais dificeis.
 
+obs: versão do flutter que adotei foi a mais atual da data.
+
+Flutter 3.16.2
+Dart 3.2.2 • DevTools 2.28.3
+buildToolsVersion "34.0.0"
+
 
 ![image](info/images/projeto.png)
 
 
 ## Apresentação
 
- Nesse projeto pretendo apresentar sua evolução de forma particionada por arquivos .
+ Nesse projeto pretendo apresentar sua evolução de forma particionada 
+ por "Módulos Executáveis Independentes" ou se preferir "Componentes 
+ de Entrada Autônomos"  .
+
+![image](info/images/ComponentesdeEntradaAutonomos.png)
 
 This project is a starting point for a Flutter application.
 
