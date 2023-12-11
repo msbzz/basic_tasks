@@ -78,7 +78,7 @@ obs:foi adaptado a variavel interna em 'Tasks' para que fosse inicializada via c
  
 <img src="info/images/tasks_design_04.png" width="300" height="600">
 
-<font size="5"><i><u>design_05.dart</u></i></font>
+<font size="5"><i><b><u>design_05.dart</u><b></i></font>
 
 Alteração de 'body:Column' para 'body:ListView' removendo as propriedades de alinhamento
 
