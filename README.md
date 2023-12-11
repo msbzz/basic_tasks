@@ -20,9 +20,9 @@ obs: versão do flutter que adotei foi a mais atual da data.
 
 ## Apresentação
 
- Nesse projeto pretendo apresentar sua evolução de forma particionada 
- por "Módulos Executáveis Independentes" ou se preferir "Componentes 
- de Entrada Autônomos"  .
+ Nesse projeto pretendo apresentar sua evolução do layout a ser alcançado 
+ de forma particionada por "Módulos Executáveis Independentes" ou se 
+ preferir "Componentes de Entrada Autônomos"  .
 
 ![image](info/images/ComponentesdeEntradaAutonomos.png)
 
