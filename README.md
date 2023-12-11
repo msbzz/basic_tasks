@@ -75,28 +75,29 @@ obs:foi adaptado a variavel interna em 'Tasks' para que fosse inicializada via c
 
 - design_04.dart
 
-![image](info/images/tasks_design_04.png)
-
+<img src="info/images/tasks_design_04.png" width="300" height="600">
+ 
 - design_05.dart
 
 Alteração de 'body:Column' para 'body:ListView' removendo as propriedades de alinhamento
 
-![image](info/images/tasks_design_05.png)
+<img src="info/images/tasks_design_05.png" width="300" height="600">
 
+ 
 - design_06.dart
 
 Utilizou um widgets 'Padding' com o intuido de espaçar os componentes do 'Container' mais externo e envolveu o widget 'Text' com um 'Container' com o intuito de limitar o comprimento em 200 pixels para titulos longos
 
-![image](info/images/tasks_design_06.png)
-
+<img src="info/images/tasks_design_06.png" width="300" height="600">
+ 
 - design_07.dart
 
 Voltando ao titulo da tarefa no widget 'TextStyle' é configurada a propriedade 'overflow: TextOverflow.ellipsis'
 afim de truncar textos longos
 
-![image](info/images/tasks_design_07.png)
+<img src="info/images/tasks_design_07.png" width="300" height="600">
 
-- design_08.dart
+ - design_08.dart
 
 Nesse ponto será adicionadp o evento do contador do nivel por meio do evento 'onPressed' assim como sua apresentação no widget 'Text' estilizado abaixo do widget 'Row'
 
@@ -105,7 +106,7 @@ Outra modificação foi encapasular tudo em um widget 'Column'
 
 ![image](info/images/tasks_design_08.1.png)
 
-![image](info/images/tasks_design_08.2.png)
+ <img src="info/images/tasks_design_08.2.png" width="300" height="600">
 
 - design_09.dart
 
@@ -115,27 +116,28 @@ No caso aqui falamos da alteração do contador '_nivel' que precisa ser descrit
 
 Outra alteração foi do acesso a varivel interna a 'Task' que agora precisa ser referenciada da seguinte form 'widget.nomeTarefa'
 
-
-![image](info/images/tasks_design_09.1.png)
-
+<img src="info/images/tasks_design_09.1.png" width="300" height="600">
+ 
 - design_10.dart
 
 Inclusão do widget 'LinearProgressIndicator' ao lado de 'Text' usado para indicação do total nivel incrementado assim como o encapsulamento destes via widget 'Row'.
 Na propriedade 'value' de 'LinearProgressIndicator' foi adicionada uma formula que converte o valor total incrementado em fracionário devido na soma total o nível máximo ser 1 já que a escala do 'LinearProgressIndicator' varia de 0 a 1
 
-![image](info/images/tasks_design_10.1.png)
-
+<img src="info/images/tasks_design_10.1.png" width="300" height="600">
+ 
 - design_11.dart
 
 Espaçamento do widgets 'Row' contendo 'LinearProgressIndicator' e a widget 'Text' onde ambas são encapsuladas em 'Padding' sendo um para cada 
 
-![image](info/images/tasks_design_11.1.png)
+<img src="info/images/tasks_design_11.1.png" width="300" height="600">
 
+ 
 - design_12.dart
 
  Aqui o código modificado no título do AppBar foi envolvido com um Padding widget e um estilo foi adicionado ao texto. O Padding tem um valor de EdgeInsets.only(left: 32), o que desloca o título para a direita. Além disso, o estilo do texto foi definido com TextStyle(color: Colors.white), o que define a cor do texto como branco.
+ 
+<img src="info/images/tasks_design_12.1.png" width="300" height="600">
 
-![image](info/images/tasks_design_12.1.png)
 
 - design_13.dart
 
@@ -154,9 +156,9 @@ Adição de um Leading Container: Um Container vazio foi adicionado como o widge
  - Adição de um FittedBox com Coluna: Dentro do botão, um FittedBox contendo uma Column foi adicionado. Esta coluna contém um ícone e um texto ('Up'), com um SizedBox entre eles para espaçamento.
  - Alteração no Padding da Barra de Progresso e Texto de Nível: O Padding para a barra de progresso e o texto de nível foi ajustado, especialmente com a adição de EdgeInsets.only(left: 8) para a barra de progresso e EdgeInsets.all(12.0) para o texto de nível.
 
-![image](info/images/tasks_design_13.1.png)
+<img src="info/images/tasks_design_13.1.png" width="300" height="600">
 
-
+ 
 - design_14.dart
 
 As seguintes mudanças introduz um elemento visual dinâmico (uma imagem GIF) no layout de cada tarefa, provavelmente para melhorar a estética ou para fornecer um contexto visual adicional.
@@ -167,9 +169,8 @@ As seguintes mudanças introduz um elemento visual dinâmico (uma imagem GIF) no
 
 - A imagem é carregada de uma URL ('https://docs.flutter.dev/assets/images/dash/dash-fainting.gif') e é configurada para se ajustar ao espaço disponível usando fit: BoxFit.cover.
 
-
-![image](info/images/tasks_design_14.1.png)
-
+<img src="info/images/tasks_design_14.1.png" width="300" height="600">
+ 
 - design_15.dart
 
 As seguintes mudanças permitem que cada tarefa tenha uma imagem associada, e essas imagens são carregadas localmente em vez de serem baixadas da internet.
@@ -192,8 +193,8 @@ Na criação dos objetos Task dentro do método build da classe MyApp, agora sã
 4- Alteração na Exibição da Imagem na Classe _TaskState:
 Dentro do método build da classe _TaskState, a linha que anteriormente usava Image.network para carregar uma imagem da internet foi substituída por uma condição. Agora, se widget.urlFoto não estiver vazia, a imagem é carregada usando Image.asset com o caminho fornecido em widget.urlFoto. Se widget.urlFoto estiver vazia, um Container vazio é exibido no lugar.
 
+ <img src="info/images/tasks_design_15.1.png" width="300" height="600">
 
-![image](info/images/tasks_design_15.1.png)
 
 - design_16.dart
 
@@ -210,7 +211,7 @@ Dentro do método build da classe _TaskState, após a definição do Container q
 A estrutura de widgets foi ligeiramente modificada para acomodar os ícones de estrelas. O Text widget que mostra o nome da tarefa e a Row dos ícones de estrelas estão agora dentro de uma Column, que está alinhada ao início (crossAxisAlignment: CrossAxisAlignment.start) e ao centro verticalmente (mainAxisAlignment: MainAxisAlignment.center).
 
 
-![image](info/images/tasks_design_16.1.png)
+<img src="info/images/tasks_design_16.1.png" width="300" height="600">
 
 
 - design_17.dart
@@ -240,9 +241,10 @@ Alteração no Widget LinearProgressIndicator:
 
 O valor do LinearProgressIndicator foi modificado para ser calculado com base no nível da tarefa e sua dificuldade. Se a dificuldade da tarefa for maior que zero, o progresso é calculado como _nivel / (widget.dificuldadeTarefa * 10), caso contrário, o valor é definido como 1.
 
-![image](info/images/tasks_design_17.1.png)
-
-![image](info/images/tasks_design_17.2.png)
+ 
+<img src="info/images/tasks_design_17.1.png" width="300" height="600">
+ 
+<img src="info/images/tasks_design_17.2.png" width="500" height="100">
 
 
 - design_18.dart
@@ -260,7 +262,8 @@ Essa mudança foi aplicada em três lugares:
 2 - Uso de ClipRRect para Imagens: No container que contém a imagem (widget.urlFoto), foi adicionado um ClipRRect com borderRadius: BorderRadius.circular(4). Isso é usado para cortar a imagem com bordas arredondadas, mantendo a consistência com o estilo geral dos containers.
 
 
-![image](info/images/tasks_design_18.1.png)
+<img src="info/images/tasks_design_18.1.png" width="300" height="600">
+
 
 - design_19.dart
 
@@ -289,8 +292,10 @@ As seguintes mudanças introduzem uma funcionalidade de animação de opacidade 
 
 - No método main, a chamada para runApp foi alterada de runApp(const MyApp()) para runApp(MyApp()). Isso é necessário porque MyApp agora é um StatefulWidget e não mais um StatelessWidget.
 
+antes do click
 
-![image](info/images/tasks_design_19.1.png)
+<img src="info/images/tasks_design_19.1.png" width="300" height="600">
 
-![image](info/images/tasks_design_19.2.png)
+após o click
 
+<img src="info/images/tasks_design_19.2.png" width="300" height="600">
