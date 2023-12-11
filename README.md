@@ -29,7 +29,7 @@ obs: versão do flutter que adotei foi a mais atual da data.
  
 ## Módulos Executáveis 
 
-<font size="5"><i><u>design_01.dart</u></i></font>
+<font size="5"><i><b><u>design_01.dart</u></b></i></font>
 
 Criação do app 'MyApp baseado em 'Material' com sua classe extendendo 'StatelessWidget' um widget estático . Conhecendo suas propriedades title, theme definidas
 Introdução ao uso da classe Scaffold onde retornamos um layout basico contendo um 'AppBar' com sua propriedade title e em seguida um body que será um 'Container' com sua cor de fundo definida para que possa ser notado
@@ -37,8 +37,8 @@ No final é adicionado um botão 'floatingActionButton' e feitas suas configura�
 
 ![image](info/images/tasks_design_01.png)
 
-
-<font size="5"><i><u>design_02.dart</u></i></font>
+ 
+<font size="5"><i><b><u>design_02.dart</u></b></i></font>
 
 Inicio da estilização seguindo o layout. Dentro da propriedade body definida como container, inclusão do widget 'Stack' agrupando dois containers empilhados, sendo o primeiro de fundo azul de 140 pixels de profundidade e o segundo
 de fundo branco de profundidade de 100 pixels. Contido nesse segundo (child) temos uma linha (row) com um container para um futuro icone, texto e ao lodo um botão (ElevatedButton) todos alinhados com espaços iguais(spaceBetween) .
@@ -46,8 +46,7 @@ de fundo branco de profundidade de 100 pixels. Contido nesse segundo (child) tem
 
 ![image](info/images/tasks_design_02.png)
 
-<font size="5"><i><u>design_03.dart</u></i></font>
-
+<font size="5"><i><b><u>design_03.dart</u></b></i></font>
 
 Refatoração de codigo onde o container da propriedade 'body' é substituido pela classe 'Task' quem contem toda funcionalidade existente naquela container
 
@@ -63,7 +62,7 @@ obs: o resultado é o mesmo apresentado em 'design_02.dart'.
 <img src="info/images/tasks_design_03.2.png" width="400" height="400">
 
 
-<font size="5"><i><u>design_04.dart</u></i></font>
+<font size="5"><i><b><u>design_04.dart</u></b></i></font>
 
 
 Na chamada do widget 'Task()' anteriormente unica, é usado um widget do tipo 'Column' e internamente são feitas tres chamadas ao widget 'Task()' onde cada um recebe como paramtro o nome de sua tarefa
@@ -78,7 +77,7 @@ obs:foi adaptado a variavel interna em 'Tasks' para que fosse inicializada via c
  
 <img src="info/images/tasks_design_04.png" width="300" height="600">
 
-<font size="5"><i><b><u>design_05.dart</u><b></i></font>
+<font size="5"><i><b><u>design_05.dart</u></b></i></font>
 
 Alteração de 'body:Column' para 'body:ListView' removendo as propriedades de alinhamento
 
