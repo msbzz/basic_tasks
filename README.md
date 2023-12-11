@@ -53,12 +53,14 @@ Refatoração de codigo onde o container da propriedade 'body' é substituido pe
 obs: o resultado é o mesmo apresentado em 'design_02.dart'.
 
 -  `fonte1`
+ 
+<img src="info/images/tasks_design_03.1.png" width="400" height="400">
 
-![image](info/images/tasks_design_03.1.png)
 
  - `fonte2`
 
-![image](info/images/tasks_design_03.2.png)
+<img src="info/images/tasks_design_03.2.png" width="400" height="400">
+ 
 
 - design_04.dart
 
@@ -67,7 +69,6 @@ Na chamada do widget 'Task()' anteriormente unica, é usado um widget do tipo 'C
 obs:foi adaptado a variavel interna em 'Tasks' para que fosse inicializada via construtor 
 
 - `chamadas`
-
 
 ![image](info/images/tasks_design_04.1.png)
 
