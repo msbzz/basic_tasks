@@ -29,7 +29,7 @@ obs: versão do flutter que adotei foi a mais atual da data.
  
 ## Módulos Executáveis 
 
- - design_01.dart
+<font size="5"><i><u>design_01.dart</u></i></font>
 
 Criação do app 'MyApp baseado em 'Material' com sua classe extendendo 'StatelessWidget' um widget estático . Conhecendo suas propriedades title, theme definidas
 Introdução ao uso da classe Scaffold onde retornamos um layout basico contendo um 'AppBar' com sua propriedade title e em seguida um body que será um 'Container' com sua cor de fundo definida para que possa ser notado
@@ -38,7 +38,7 @@ No final é adicionado um botão 'floatingActionButton' e feitas suas configura�
 ![image](info/images/tasks_design_01.png)
 
 
- - design_02.dart
+<font size="5"><i><u>design_02.dart</u></i></font>
 
 Inicio da estilização seguindo o layout. Dentro da propriedade body definida como container, inclusão do widget 'Stack' agrupando dois containers empilhados, sendo o primeiro de fundo azul de 140 pixels de profundidade e o segundo
 de fundo branco de profundidade de 100 pixels. Contido nesse segundo (child) temos uma linha (row) com um container para um futuro icone, texto e ao lodo um botão (ElevatedButton) todos alinhados com espaços iguais(spaceBetween) .
@@ -46,7 +46,8 @@ de fundo branco de profundidade de 100 pixels. Contido nesse segundo (child) tem
 
 ![image](info/images/tasks_design_02.png)
 
-- design_03.dart
+<font size="5"><i><u>design_03.dart</u></i></font>
+
 
 Refatoração de codigo onde o container da propriedade 'body' é substituido pela classe 'Task' quem contem toda funcionalidade existente naquela container
 
@@ -60,9 +61,10 @@ obs: o resultado é o mesmo apresentado em 'design_02.dart'.
  - `fonte2`
 
 <img src="info/images/tasks_design_03.2.png" width="400" height="400">
- 
 
-- design_04.dart
+
+<font size="5"><i><u>design_04.dart</u></i></font>
+
 
 Na chamada do widget 'Task()' anteriormente unica, é usado um widget do tipo 'Column' e internamente são feitas tres chamadas ao widget 'Task()' onde cada um recebe como paramtro o nome de sua tarefa
 
@@ -73,32 +75,30 @@ obs:foi adaptado a variavel interna em 'Tasks' para que fosse inicializada via c
 ![image](info/images/tasks_design_04.1.png)
 
 - `layout`
-
-- design_04.dart
-
-<img src="info/images/tasks_design_04.png" width="300" height="600">
  
-- design_05.dart
+<img src="info/images/tasks_design_04.png" width="300" height="600">
+
+<font size="5"><i><u>design_05.dart</u></i></font>
 
 Alteração de 'body:Column' para 'body:ListView' removendo as propriedades de alinhamento
 
 <img src="info/images/tasks_design_05.png" width="300" height="600">
 
- 
-- design_06.dart
+
+<font size="5"><i><u>design_06.dart</u></i></font>
 
 Utilizou um widgets 'Padding' com o intuido de espaçar os componentes do 'Container' mais externo e envolveu o widget 'Text' com um 'Container' com o intuito de limitar o comprimento em 200 pixels para titulos longos
 
 <img src="info/images/tasks_design_06.png" width="300" height="600">
- 
-- design_07.dart
+
+<font size="5"><i><u>design_07.dart</u></i></font>
 
 Voltando ao titulo da tarefa no widget 'TextStyle' é configurada a propriedade 'overflow: TextOverflow.ellipsis'
 afim de truncar textos longos
 
 <img src="info/images/tasks_design_07.png" width="300" height="600">
 
- - design_08.dart
+<font size="5"><i><u>design_08.dart</u></i></font>
 
 Nesse ponto será adicionadp o evento do contador do nivel por meio do evento 'onPressed' assim como sua apresentação no widget 'Text' estilizado abaixo do widget 'Row'
 
@@ -109,7 +109,7 @@ Outra modificação foi encapasular tudo em um widget 'Column'
 
  <img src="info/images/tasks_design_08.2.png" width="300" height="600">
 
-- design_09.dart
+<font size="5"><i><u>design_09.dart</u></i></font>
 
 Devido a necessidade da manutenção de estado pela widget 'Task' esta foi modificada de 'StatelessWidget' estática para 'StatefulWidget' dinâmica e com isso criar a widget '_TaskState' do tipo 'State' para gerenciar este estado
 
@@ -118,29 +118,29 @@ No caso aqui falamos da alteração do contador '_nivel' que precisa ser descrit
 Outra alteração foi do acesso a varivel interna a 'Task' que agora precisa ser referenciada da seguinte form 'widget.nomeTarefa'
 
 <img src="info/images/tasks_design_09.1.png" width="300" height="600">
- 
-- design_10.dart
+
+<font size="5"><i><u>design_10.dart</u></i></font>
 
 Inclusão do widget 'LinearProgressIndicator' ao lado de 'Text' usado para indicação do total nivel incrementado assim como o encapsulamento destes via widget 'Row'.
 Na propriedade 'value' de 'LinearProgressIndicator' foi adicionada uma formula que converte o valor total incrementado em fracionário devido na soma total o nível máximo ser 1 já que a escala do 'LinearProgressIndicator' varia de 0 a 1
 
 <img src="info/images/tasks_design_10.1.png" width="300" height="600">
- 
-- design_11.dart
+
+<font size="5"><i><u>design_11.dart</u></i></font>
 
 Espaçamento do widgets 'Row' contendo 'LinearProgressIndicator' e a widget 'Text' onde ambas são encapsuladas em 'Padding' sendo um para cada 
 
 <img src="info/images/tasks_design_11.1.png" width="300" height="600">
 
- 
-- design_12.dart
+
+<font size="5"><i><u>design_12.dart</u></i></font>
 
  Aqui o código modificado no título do AppBar foi envolvido com um Padding widget e um estilo foi adicionado ao texto. O Padding tem um valor de EdgeInsets.only(left: 32), o que desloca o título para a direita. Além disso, o estilo do texto foi definido com TextStyle(color: Colors.white), o que define a cor do texto como branco.
  
 <img src="info/images/tasks_design_12.1.png" width="300" height="600">
 
 
-- design_13.dart
+<font size="5"><i><u>design_13.dart</u></i></font>
 
 1 - AppBar Alterações:
 
@@ -159,8 +159,8 @@ Adição de um Leading Container: Um Container vazio foi adicionado como o widge
 
 <img src="info/images/tasks_design_13.1.png" width="300" height="600">
 
- 
-- design_14.dart
+
+<font size="5"><i><u>design_14.dart</u></i></font>
 
 As seguintes mudanças introduz um elemento visual dinâmico (uma imagem GIF) no layout de cada tarefa, provavelmente para melhorar a estética ou para fornecer um contexto visual adicional.
 
@@ -171,8 +171,8 @@ As seguintes mudanças introduz um elemento visual dinâmico (uma imagem GIF) no
 - A imagem é carregada de uma URL ('https://docs.flutter.dev/assets/images/dash/dash-fainting.gif') e é configurada para se ajustar ao espaço disponível usando fit: BoxFit.cover.
 
 <img src="info/images/tasks_design_14.1.png" width="300" height="600">
- 
-- design_15.dart
+
+<font size="5"><i><u>design_15.dart</u></i></font>
 
 As seguintes mudanças permitem que cada tarefa tenha uma imagem associada, e essas imagens são carregadas localmente em vez de serem baixadas da internet.
 
@@ -197,7 +197,7 @@ Dentro do método build da classe _TaskState, a linha que anteriormente usava Im
  <img src="info/images/tasks_design_15.1.png" width="300" height="600">
 
 
-- design_16.dart
+<font size="5"><i><u>design_16.dart</u></i></font>
 
 As seguintes mudanças introduzem uma visualização de classificação por estrelas para cada tarefa, permitindo uma representação visual da avaliação ou importância de cada tarefa na lista.
 
@@ -215,7 +215,7 @@ A estrutura de widgets foi ligeiramente modificada para acomodar os ícones de e
 <img src="info/images/tasks_design_16.1.png" width="300" height="600">
 
 
-- design_17.dart
+<font size="5"><i><u>design_17.dart</u></i></font>
 
 As seguintes alterações tornam o código mais flexível e dinâmico, permitindo que cada tarefa tenha um nível de dificuldade associado e que a interface do usuário reflita essa dificuldade de forma mais interativa.
 
@@ -242,13 +242,16 @@ Alteração no Widget LinearProgressIndicator:
 
 O valor do LinearProgressIndicator foi modificado para ser calculado com base no nível da tarefa e sua dificuldade. Se a dificuldade da tarefa for maior que zero, o progresso é calculado como _nivel / (widget.dificuldadeTarefa * 10), caso contrário, o valor é definido como 1.
 
- 
+layout 
+
 <img src="info/images/tasks_design_17.1.png" width="300" height="600">
+
+ codigo
  
 <img src="info/images/tasks_design_17.2.png" width="500" height="100">
 
 
-- design_18.dart
+<font size="5"><i><u>design_18.dart</u></i></font>
 
 As seguintes mudanças visam melhorar a estética da interface do usuário, dando um aspecto mais polido e moderno aos elementos visuais, especialmente com o uso de bordas arredondadas.
 
@@ -266,7 +269,7 @@ Essa mudança foi aplicada em três lugares:
 <img src="info/images/tasks_design_18.1.png" width="300" height="600">
 
 
-- design_19.dart
+<font size="5"><i><u>design_19.dart</u></i></font>
 
 
 As seguintes mudanças introduzem uma funcionalidade de animação de opacidade para o ListView contendo as tarefas, permitindo que ele desapareça ou apareça suavemente quando o botão flutuante é pressionado.
