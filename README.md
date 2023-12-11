@@ -84,20 +84,20 @@ Alteração de 'body:Column' para 'body:ListView' removendo as propriedades de a
 <img src="info/images/tasks_design_05.png" width="300" height="600">
 
 
-<font size="5"><i><u>design_06.dart</u></i></font>
+<font size="5"><i><b><u>design_06.dart</u></b></i></font>
 
 Utilizou um widgets 'Padding' com o intuido de espaçar os componentes do 'Container' mais externo e envolveu o widget 'Text' com um 'Container' com o intuito de limitar o comprimento em 200 pixels para titulos longos
 
 <img src="info/images/tasks_design_06.png" width="300" height="600">
 
-<font size="5"><i><u>design_07.dart</u></i></font>
+<font size="5"><i><b><u>design_07.dart</u></b></i></font>
 
 Voltando ao titulo da tarefa no widget 'TextStyle' é configurada a propriedade 'overflow: TextOverflow.ellipsis'
 afim de truncar textos longos
 
 <img src="info/images/tasks_design_07.png" width="300" height="600">
 
-<font size="5"><i><u>design_08.dart</u></i></font>
+<font size="5"><i><b><u>design_08.dart</u></b></i></font>
 
 Nesse ponto será adicionadp o evento do contador do nivel por meio do evento 'onPressed' assim como sua apresentação no widget 'Text' estilizado abaixo do widget 'Row'
 
@@ -108,7 +108,7 @@ Outra modificação foi encapasular tudo em um widget 'Column'
 
  <img src="info/images/tasks_design_08.2.png" width="300" height="600">
 
-<font size="5"><i><u>design_09.dart</u></i></font>
+<font size="5"><i><b><u>design_09.dart</u></b></i></font>
 
 Devido a necessidade da manutenção de estado pela widget 'Task' esta foi modificada de 'StatelessWidget' estática para 'StatefulWidget' dinâmica e com isso criar a widget '_TaskState' do tipo 'State' para gerenciar este estado
 
@@ -118,28 +118,28 @@ Outra alteração foi do acesso a varivel interna a 'Task' que agora precisa ser
 
 <img src="info/images/tasks_design_09.1.png" width="300" height="600">
 
-<font size="5"><i><u>design_10.dart</u></i></font>
+<font size="5"><i><b><u>design_10.dart</u></b></i></font>
 
 Inclusão do widget 'LinearProgressIndicator' ao lado de 'Text' usado para indicação do total nivel incrementado assim como o encapsulamento destes via widget 'Row'.
 Na propriedade 'value' de 'LinearProgressIndicator' foi adicionada uma formula que converte o valor total incrementado em fracionário devido na soma total o nível máximo ser 1 já que a escala do 'LinearProgressIndicator' varia de 0 a 1
 
 <img src="info/images/tasks_design_10.1.png" width="300" height="600">
 
-<font size="5"><i><u>design_11.dart</u></i></font>
+<font size="5"><i><b><u>design_11.dart</u></b></i></font>
 
 Espaçamento do widgets 'Row' contendo 'LinearProgressIndicator' e a widget 'Text' onde ambas são encapsuladas em 'Padding' sendo um para cada 
 
 <img src="info/images/tasks_design_11.1.png" width="300" height="600">
 
 
-<font size="5"><i><u>design_12.dart</u></i></font>
+<font size="5"><i><b><u>design_12.dart</u></b></i></font>
 
  Aqui o código modificado no título do AppBar foi envolvido com um Padding widget e um estilo foi adicionado ao texto. O Padding tem um valor de EdgeInsets.only(left: 32), o que desloca o título para a direita. Além disso, o estilo do texto foi definido com TextStyle(color: Colors.white), o que define a cor do texto como branco.
  
 <img src="info/images/tasks_design_12.1.png" width="300" height="600">
 
 
-<font size="5"><i><u>design_13.dart</u></i></font>
+<font size="5"><i><b><u>design_13.dart</u></b></i></font>
 
 1 - AppBar Alterações:
 
@@ -159,7 +159,7 @@ Adição de um Leading Container: Um Container vazio foi adicionado como o widge
 <img src="info/images/tasks_design_13.1.png" width="300" height="600">
 
 
-<font size="5"><i><u>design_14.dart</u></i></font>
+<font size="5"><i><b><u>design_14.dart</u></b></i></font>
 
 As seguintes mudanças introduz um elemento visual dinâmico (uma imagem GIF) no layout de cada tarefa, provavelmente para melhorar a estética ou para fornecer um contexto visual adicional.
 
@@ -171,7 +171,7 @@ As seguintes mudanças introduz um elemento visual dinâmico (uma imagem GIF) no
 
 <img src="info/images/tasks_design_14.1.png" width="300" height="600">
 
-<font size="5"><i><u>design_15.dart</u></i></font>
+<font size="5"><i><b><u>design_15.dart</u></b></i></font>
 
 As seguintes mudanças permitem que cada tarefa tenha uma imagem associada, e essas imagens são carregadas localmente em vez de serem baixadas da internet.
 
@@ -196,7 +196,7 @@ Dentro do método build da classe _TaskState, a linha que anteriormente usava Im
  <img src="info/images/tasks_design_15.1.png" width="300" height="600">
 
 
-<font size="5"><i><u>design_16.dart</u></i></font>
+<font size="5"><i><b><u>design_16.dart</u></b></i></font>
 
 As seguintes mudanças introduzem uma visualização de classificação por estrelas para cada tarefa, permitindo uma representação visual da avaliação ou importância de cada tarefa na lista.
 
@@ -213,8 +213,7 @@ A estrutura de widgets foi ligeiramente modificada para acomodar os ícones de e
 
 <img src="info/images/tasks_design_16.1.png" width="300" height="600">
 
-
-<font size="5"><i><u>design_17.dart</u></i></font>
+<font size="5"><i><b><u>design_17.dart</u></b></i></font>
 
 As seguintes alterações tornam o código mais flexível e dinâmico, permitindo que cada tarefa tenha um nível de dificuldade associado e que a interface do usuário reflita essa dificuldade de forma mais interativa.
 
@@ -250,7 +249,7 @@ layout
 <img src="info/images/tasks_design_17.2.png" width="500" height="100">
 
 
-<font size="5"><i><u>design_18.dart</u></i></font>
+<font size="5"><i><b><u>design_18.dart</u></b></i></font>
 
 As seguintes mudanças visam melhorar a estética da interface do usuário, dando um aspecto mais polido e moderno aos elementos visuais, especialmente com o uso de bordas arredondadas.
 
@@ -268,7 +267,7 @@ Essa mudança foi aplicada em três lugares:
 <img src="info/images/tasks_design_18.1.png" width="300" height="600">
 
 
-<font size="5"><i><u>design_19.dart</u></i></font>
+<font size="5"><i><b><u>design_19.dart</u></b></i></font>
 
 
 As seguintes mudanças introduzem uma funcionalidade de animação de opacidade para o ListView contendo as tarefas, permitindo que ele desapareça ou apareça suavemente quando o botão flutuante é pressionado.
