@@ -141,6 +141,8 @@ Espaçamento do widgets 'Row' contendo 'LinearProgressIndicator' e a widget 'Tex
 
 <font size="5"><i><b><u>design_13.dart</u></b></i></font>
 
+As seguintes alterações visam principalmente aprimorar a interface do usuário, adicionando mais controle sobre o layout e a apresentação dos elementos na tela, especialmente em relação ao botão de incremento de nível e ao alinhamento dos elementos dentro de cada tarefa.
+
 1 - AppBar Alterações:
 
 Remoção do Padding no Título: No código original, o título 'Tarefas' estava dentro de um widget Padding. No código  
